@@ -6,9 +6,8 @@ Run `yarn start` in the `source/` directory. You should see a page documenting a
 
 ## Setup
 
-1. Run `yarn` in the `source` folder
-2. Run `yarn` in the `documentation` folder
-3. Run `yarn start` in the `documentation` folder.
+1. Run `yarn` in the `documentation` folder
+2. Run `yarn start` in the `documentation` folder.
 
 The `Props` component does not show any props for our `<Button>`. The `Playground` component displays the markup just fine, though.
 
