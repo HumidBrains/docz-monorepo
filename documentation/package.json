@@ -1,7 +1,11 @@
 {
+  "scripts": {
+    "start": "rm -rf .docz && yarn docz dev"
+  },
   "dependencies": {
     "docz": "^2.1.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "typescript": "^3.7.3"
   }
 }

@@ -1,36 +1,18 @@
-# Debugging monorepo support with Docz
+# Debugging Props component with Docz
 
-Run `yarn run docz dev` in the `source/` directory. You should see the
+Run `yarn start` in the `source/` directory. You should see the
 
 ## Setup
 
 1. Run `yarn` in the `source` folder
 2. Run `yarn` in the `documentation` folder
-3. Run `yarn run docz dev` in the `documentation` folder.
+3. Run `yarn start` in the `documentation` folder.
 
-➡️ you should now see the errors below in your terminal:
-
-```
- ERROR #98123  WEBPACK
-
-Generating SSR bundle failed
-
-Can't resolve '../../../../../../../source/src/Button' in '/Users/maxime/Code/docz-monorepo/documentation/.docz/.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir'
-
-File: .cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/049a239130db62be40d44f60627af4dd.js
-
-
- ERROR #98123  WEBPACK
-
-Generating SSR bundle failed
-
-Can't resolve '@emotion/core' in '/Users/maxime/Code/docz-monorepo/source/src'
-
-File: ../../source/src/Button.jsx
-
-```
+The `Props` component does not show any props for our `<Button>`. The `Playground` component displays the markup just fine, though.
 
 ## Folder structure
+
+This example repo emulates a monorepo _without Lerna or Yarn workspaces_. This works (except for the bug described above) partially thanks to the custom configuration in the `documentation/gatsby-node.js` file.
 
 ```
 docz-monorepo
