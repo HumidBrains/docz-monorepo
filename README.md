@@ -1,6 +1,8 @@
 # Debugging Props component with Docz
 
-Run `yarn start` in the `source/` directory. You should see the
+Run `yarn start` in the `source/` directory. You should see a page documenting a Button component but the `docz/Props` component doesn't list any props.
+
+<img src="screenshots/missing_props.png" style="max-width: 100%">
 
 ## Setup
 
